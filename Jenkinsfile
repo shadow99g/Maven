@@ -6,10 +6,5 @@ pipeline {
         echo 'Jenkins Pipeline Minute'
       }
     }
-    stage('Test') {
-      steps {
-        readTrusted '/home/Documents/GitHub/simple-java-maven-app'
-      }
-    }
   }
 }
