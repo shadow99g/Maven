@@ -1,10 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('') {
       steps {
-        echo 'Jenkins Pipeline Minute'
+        sh 'mvn clean package'
       }
     }
+
+    stage('test') {
+      steps {
+        sh 'mvn test'
+      }
+    }
+
   }
 }
