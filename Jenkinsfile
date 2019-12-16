@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('deploy') {
+      steps {
+        sh 'cp /root/.jenkins/workspace/Maven_master/target/junit-1.war /opt/wildfly/standalone/deployments/'
+      }
+    }
+
   }
 }
