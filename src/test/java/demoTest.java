@@ -28,9 +28,19 @@ public class demoTest {
     @Test
     public void testResta() {
 
-        int resultado = maven.junit.demo.suma(3, 2);
+        int resultado = maven.junit.demo.resta(3, 2);
+        int esperado = 1;
+        TestCase.assertEquals(esperado, resultado);
+
+    }
+
+    @Test
+    public void testDividir() {
+
+        int resultado = maven.junit.demo.dividir(10, 2);
         int esperado = 5;
         TestCase.assertEquals(esperado, resultado);
 
     }
+
 }
